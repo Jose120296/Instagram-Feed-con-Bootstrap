@@ -1,0 +1,69 @@
+/* * {
+	border: 1px dashed red;
+	min-height: 10px;
+}	 */
+
+body {
+	margin: 5px;
+}
+
+.instaTitle {
+	display: flex;
+}
+
+#instaIcon {
+	display: grid;
+	place-items: center;
+	margin-right: 15px;
+}
+
+.navRight {
+	display: flex;
+}
+
+button {
+	margin: 5px;
+}
+
+#nav-tab {
+	display: flex;
+	align-items: center;
+  	justify-content: center;
+	gap: 1em;
+	margin-top: 10px;
+}
+
+#nav-profile {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+  	flex-direction: column;
+  	justify-content: space-between;
+	margin-top: 20px;
+	gap: 1em;
+}
+
+.card-title {
+	padding: 10px;
+}
+
+#modalIcons {
+	display: flex;
+	gap: 1em;
+}
+
+#camera {
+	padding: 10px;
+	border: grey;
+	margin-top: 20px;
+}
+
+#location {
+	padding: 10px;
+	border: grey;
+	margin-top: 20px;
+}
+
+.card {
+	margin-top: 20px;
+}

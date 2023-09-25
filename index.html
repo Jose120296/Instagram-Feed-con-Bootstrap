@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Instagram Photo Feed</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <div class="instaTitle">
+                    <i class="fa-brands fa-instagram fs-1" id="instaIcon"></i>
+                    <h1>Instagram</h1>
+                </div>
+                <div class="navRight">
+                    <div class="NewPost">
+                        <button type="button" class="btn btn-success " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Create a new post
+                        </button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h6>Caption:</h6>
+                                        <div class="form-floating">
+                                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                                            <label for="floatingTextarea">Add the caption of your post here</label>
+                                        </div>
+                                        <div id="modalIcons">
+                                            <div>
+                                                <i class="fa-solid fa-camera bg-body-tertiary" id="camera"></i>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-location-dot bg-body-tertiary" id="location"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-success">Publish</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle " type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-gear"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                            <li><a class="dropdown-item" href="#">Privacy and data</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="navIcons">
+        <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
+              <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="fa-solid fa-square"></i></button>
+            </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                <div class="container-fluid"> 
+                    <div class="row">
+                        <img src="img/img1.jpg" class="img-thumbnail col-4" alt="img1">
+                        <img src="img/img2.jpg" class="img-thumbnail col-4" alt="img2">
+                        <img src="img/img3.jpg" class="img-thumbnail col-4" alt="img3">
+                        <img src="img/img5.jpg" class="img-thumbnail col-4" alt="img4">
+                        <img src="img/img5.jpg" class="img-thumbnail col-4" alt="img5">
+                        <img src="img/img6.jpg" class="img-thumbnail col-4" alt="img6">
+                        <img src="img/img7.jpg" class="img-thumbnail col-4" alt="img7">
+                        <img src="img/img8.jpg" class="img-thumbnail col-4" alt="img8">
+                        <img src="img/img9.jpg" class="img-thumbnail col-4" alt="img9">
+                        <img src="img/img10.jpg" class="img-thumbnail col-4" alt="img10">
+                        <img src="img/img11.jpg" class="img-thumbnail col-4" alt="img11">
+                        <img src="img/img12.jpg" class="img-thumbnail col-4" alt="img12">
+                        <img src="img/img13.jpg" class="img-thumbnail col-4" alt="img13">
+                        <img src="img/img14.jpg" class="img-thumbnail col-4" alt="img14">
+                        <img src="img/img15.jpg" class="img-thumbnail col-4" alt="img15">
+                        <img src="img/img16.jpg" class="img-thumbnail col-4" alt="img16">
+                        <img src="img/img17.jpg" class="img-thumbnail col-4" alt="img17">
+                        <img src="img/img18.jpg" class="img-thumbnail col-4" alt="img18">
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                <div class="card" >
+                    <h5 class="card-title">Insta photo 1</h5>
+                    <img src="img/img1.jpg" class="card-img-top" alt="cardImg1">
+                    <div class="card-body">
+                        <h6 class="card-subtitle mb-2 text-body-secondary"><strong>100 likes</strong></h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                <div class="card" >
+                    <h5 class="card-title">Insta photo 2</h5>
+                    <img src="img/img2.jpg" class="card-img-top" alt="cardImg2">
+                    <div class="card-body">
+                        <h6 class="card-subtitle mb-2 text-body-secondary"><strong>100 likes</strong></h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                <div class="card" >
+                    <h5 class="card-title">Insta photo 3</h5>
+                    <img src="img/img3.jpg" class="card-img-top" alt="cardImg3">
+                    <div class="card-body">
+                        <h6 class="card-subtitle mb-2 text-body-secondary"><strong>100 likes</strong></h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                <div class="card" >
+                    <h5 class="card-title">Insta photo 4</h5>
+                    <img src="img/img4.jpg" class="card-img-top" alt="cardImg4">
+                    <div class="card-body">
+                        <h6 class="card-subtitle mb-2 text-body-secondary"><strong>100 likes</strong></h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                <div class="card" >
+                    <h5 class="card-title">Insta photo 5</h5>
+                    <img src="img/img5.jpg" class="card-img-top" alt="cardImg5">
+                    <div class="card-body">
+                        <h6 class="card-subtitle mb-2 text-body-secondary"><strong>100 likes</strong></h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                <div class="card" >
+                    <h5 class="card-title">Insta photo 6</h5>
+                    <img src="img/img6.jpg" class="card-img-top" alt="cardImg6">
+                    <div class="card-body">
+                        <h6 class="card-subtitle mb-2 text-body-secondary"><strong>100 likes</strong></h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                <div class="card" >
+                    <h5 class="card-title">Insta photo 7</h5>
+                    <img src="img/img7.jpg" class="card-img-top" alt="cardImg7">
+                    <div class="card-body">
+                        <h6 class="card-subtitle mb-2 text-body-secondary"><strong>100 likes</strong></h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                <div class="card" >
+                    <h5 class="card-title">Insta photo 8</h5>
+                    <img src="img/img8.jpg" class="card-img-top" alt="cardImg8">
+                    <div class="card-body">
+                        <h6 class="card-subtitle mb-2 text-body-secondary"><strong>100 likes</strong></h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                <div class="card" >
+                    <h5 class="card-title">Insta photo 9</h5>
+                    <img src="img/img9.jpg" class="card-img-top" alt="cardImg9">
+                    <div class="card-body">
+                        <h6 class="card-subtitle mb-2 text-body-secondary"><strong>100 likes</strong></h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                <div class="card" >
+                    <h5 class="card-title">Insta photo 10</h5>
+                    <img src="img/img10.jpg" class="card-img-top" alt="cardImg10">
+                    <div class="card-body">
+                        <h6 class="card-subtitle mb-2 text-body-secondary"><strong>100 likes</strong></h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                <div class="card" >
+                    <h5 class="card-title">Insta photo 11</h5>
+                    <img src="img/img11.jpg" class="card-img-top" alt="cardImg11">
+                    <div class="card-body">
+                        <h6 class="card-subtitle mb-2 text-body-secondary"><strong>100 likes</strong></h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                <div class="card" >
+                    <h5 class="card-title">Insta photo 12</h5>
+                    <img src="img/img12.jpg" class="card-img-top" alt="cardImg12">
+                    <div class="card-body">
+                        <h6 class="card-subtitle mb-2 text-body-secondary"><strong>100 likes</strong></h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://kit.fontawesome.com/88fa653541.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
